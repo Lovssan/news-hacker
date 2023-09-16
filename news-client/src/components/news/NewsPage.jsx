@@ -33,15 +33,13 @@ const NewsPage = () => {
 	return (
 		<div className={styles.wrapper}>
 			<h1>{data.title}</h1>
-			<Link>
-				<a
-					href={data.url}
-					target='_blank'
-					rel='noopener noreferrer'
-					style={{ fontSize: '24px' }}
-				>
-					Go to source
-				</a>
+			<Link
+				href={data.url}
+				target='_blank'
+				rel='noopener noreferrer'
+				style={{ fontSize: '24px' }}
+			>
+				Go to source
 			</Link>
 			<p>Author: {data.by}</p>
 			<p>Created: {date(data.time)}</p>
